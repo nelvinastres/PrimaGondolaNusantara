@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="MainPage.css">
+    <title>Prima Gondola</title>
+</head>
+
+<body>
+    <!-- ===============================NAV START=================================== -->
+    <nav>
+        <div class="navContainer">
+            <img src="https://primagondola.co.id/assets/images/front-logo.png" alt="" onclick="scrollHome()">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#ourProducts">PRODUCTS</a></li>
+                <li><a href="#aboutUs">ABOUT US</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contactUs">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ===============================NAV END=================================== -->
+
+    <!-- ===============================HEADER START=================================== -->
+    <div class="header" id="home">
+        <div class="slideshow-container">
+            <div class="mySlides fade" style="background-image: url(Assets/Group\ 1.png);">
+                <div class="text">Kelebihan 1</div>
+                <p>Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia. Sed earum quas
+                    eos quae voluptas ad impedit consectetur</p>
+                <div style="text-align:center">
+                    <span class="dots" onclick="chooseSlide(0)"></span>
+                    <span class="dot" onclick="chooseSlide(1)"></span>
+                    <span class="dot" onclick="chooseSlide(2)"></span>
+                    <span class="dot" onclick="chooseSlide(3)"></span>
+                </div>
+            </div>
+
+            <div class="mySlides fade" style="background-image: url(Assets/Group\ 2.png);">
+                <div class="text">Kelebihan 2</div>
+                <p>Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia. Sed earum quas
+                    eos quae voluptas ad impedit consectetur</p>
+                <div style="text-align:center">
+                    <span class="dot" onclick="chooseSlide(0)"></span>
+                    <span class="dots" onclick="chooseSlide(1)"></span>
+                    <span class="dot" onclick="chooseSlide(2)"></span>
+                    <span class="dot" onclick="chooseSlide(3)"></span>
+                </div>
+            </div>
+
+            <div class="mySlides fade" style="background-image: url(Assets/Group\ 3.png);">
+                <div class="text">Kelebihan 3</div>
+                <p>Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia. Sed earum quas
+                    eos quae voluptas ad impedit consectetur</p>
+                <div style="text-align:center">
+                    <span class="dot" onclick="chooseSlide(0)"></span>
+                    <span class="dot" onclick="chooseSlide(1)"></span>
+                    <span class="dots" onclick="chooseSlide(2)"></span>
+                    <span class="dot" onclick="chooseSlide(3)"></span>
+                </div>
+            </div>
+            <div class="mySlides fade" style="background-image: url(Assets/Group\ 4.png);">
+                <div class="text">Kelebihan 4</div>
+                <p>Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia. Sed earum quas
+                    eos quae voluptas ad impedit consectetur</p>
+                <div style="text-align:center">
+                    <span class="dot" onclick="chooseSlide(0)"></span>
+                    <span class="dot" onclick="chooseSlide(1)"></span>
+                    <span class="dot" onclick="chooseSlide(2)"></span>
+                    <span class="dots" onclick="chooseSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============================HEADER END=================================== -->
+
+    <p class="desc1">Selalu Siap Melayani Anda!</p>
+    <p class="desc2">Kami ingin selalu ada untuk berpartisipasi dan memberikan pelayanan yang terbaik dalam setiap proyek yang Anda kerjakan</p>
+
+    <!-- ===============================ABOUT US START=================================== -->
+    <div class="aboutUs" id="aboutUs">
+        <div class="aboutUsLayer1">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="aboutUsLayer2">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="aboutUsLayer3" onclick="openModal()">
+            <div class="aboutUsFrontContent">
+                <br><br><br><br><br><br><br><br>
+                <p class="title">About Us</p>
+                <p class="frontDesc">PT Prima Gondola Nusantara adalah perusahaan yang berdiri sejak tahun 2007 dengan
+                    memfokuskan diri pada penyediaan dan jasa penyewaan alat angkut gondola. Sejak awal berdiri, Pt.
+                    Prima Gondola Nusantara telah membukukan catatan yang baik. Ini di buktikan dengan pelayanan dan
+                    penanganan yang cepat kepada pelanggan, kualitas alat angkut gondola yang baru dan karyawan yang
+                    telah berpengalaman lebih dari 10 tahun di bidang gondola</p>
+                <p class="readMoreAboutUs" onclick="openModal()">READ MORE</p>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <div class="aboutUsModal">
+        <div class="aboutUsModalContent">
+            <span class="closebtn" onclick="closeModal()">&times;</span>
+            <p class="history">HISTORY</p>
+            <p class="historyDesc">PT Prima Gondola Nusantara adalah perusahaan yang berdiri sejak tahun 2007 dengan
+                memfokuskan diri pada penyediaan dan jasa penyewaan alat angkut gondola. Sejak awal berdiri, Pt. Prima
+                Gondola Nusantara telah membukukan catatan yang baik. Ini di buktikan dengan pelayanan dan penanganan
+                yang cepat kepada pelanggan, kualitas alat angkut gondola yang baru dan karyawan yang telah
+                berpengalaman lebih dari 10 tahun di bidang gondola.
+                <br><br>
+                Dengan di dukung oleh pemahaman intuitif akan kebutuhan pasar yang kompetitif dan dinamis, Pt. Prima
+                Gondola Nusantara selalu berusaha menjadi yang terbaik dengan menjadi mitra yang handal dalam penyediaan
+                alat transportasi gondola yang telah memenuhi syarat-syarat pengujian oleh Departemen Tenaga Kerja dan
+                Transmigrasi. Semua alat angkut gondola milik Pt. Prima Gondola Nusantara telah memiliki Sertifikat Ijin
+                DEPNAKER.
+            </p>
+
+            <p class="ourEquipment">OUR EQUIPMENT</p>
+            <p class="ourEquipmentDesc">
+                &#x2022; Type Gondola : Shenxi LTD5 <br>
+                &#x2022; Kapasitas Mesin : 500 kg x 2 pcs <br>
+                &#x2022; Kecepatan : 9.6 m/min <br>
+                &#x2022; Power Supply : 380 volt, 3 Phase, 1.5 kw <br>
+                &#x2022; Wire Rope : Ø 8.6 mm <br>
+                &#x2022; Safety Device : Safety Lock LSB30II <br>
+                &#x2022; Keranjang : 1000/2000/2500/5000 x 690 x 1450 mm <br>
+            </p>
+        </div>
+    </div>
+    <!-- ===============================ABOUT US END=================================== -->
+
+    <!-- ===============================SERVICES START=================================== -->
+    <div class="servicesContainer">
+        <div class="serviceTitle">
+            <p class="first">What</p>
+            <p class="second">Do We Provide?</p>
+        </div>
+        <div class="serviceDesc">
+            <div class="border">
+                <div class="circle">aai</div>
+                <div class="line"></div>
+                <div class="circle">aai</div>
+                <div class="line"></div>
+                <div class="circle">aai</div>
+            </div>
+            <div class="services">
+                <p class="pointTitle">Sewa Gondola</p>
+                <p class="pointDesc">Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia.</p>
+                <br>
+                <p class="pointTitle">Penjualan Unit Baru</p>
+                <p class="pointDesc">Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia.</p>
+                <br>
+                <p class="pointTitle">Penjualan Unit Bekas</p>
+                <p class="pointDesc">Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- ===============================SERVICES END=================================== -->
+
+    <!-- ===============================PRODUCTS START=================================== -->
+    <div class="ourProducts" id="ourProducts">
+        <p class="ourProductsTitle">OUR PRODUCTS</p>
+        <div class="listOfProducts">
+            <div class="productsFrame" onclick="openModalp()">
+                <div class="products">
+                    <img src="/Assets/product 1.png" alt="">
+                    <div class="productstext">
+                        <p class="productsName">Loading Deck</p>
+                        <p class="productsDesc">SLD Series Loading Deck adalah alat yang mendukung tower crane untuk memindahkan barang atau material dari luar ke dalam gedung</p>
+                        <p class="moreInfo" onclick="openModalp()">MORE INFO &rarr;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsModal">
+                <div class="productsModalContent">
+                    <div class="upper">
+                        <div class="productsModalText">
+                            <p class="productsModalTitle">Loading Deck</p>
+                            <p class="productsModalDesc">SLD Series Loading Deck adalah alat yang mendukung tower crane untuk memindahkan barang atau material dari luar ke dalam gedung. <br> <br>
+                                Why choose our loading deck? <br>
+                                &#x2022; Max outboard length : 5.25m <br>
+                                &#x2022; Easy Push/Pull system <br>
+                                &#x2022; Simple Locking system <br>
+                                &#x2022; Installing at adjustable props <br>
+                                &#x2022; Conveniently located anchr points for safe use <br>
+                                &#x2022; Customize to all projects requirements</p>
+                        </div>
+                            <div class="productsImageContainer">
+                                <span class="closebtnp" onclick="closeModalp()">&times;</span>
+                                <div class="mySlidesProduct">
+                                    <img src="/Assets/product 1 - 1.png">
+                                </div>
+                              
+                                <div class="mySlidesProduct">
+                                    <img src="/Assets/product 1 - 2.jpg">
+                                </div>
+                              
+                                <div class="mySlidesProduct">
+                                    <img src="/Assets/product 1 - 3.jpg">
+                                </div>
+                              
+                                <div class="mySlidesProduct">
+                                    <img src="/Assets/product 1 - 4.jpg">
+                                </div>
+                              
+                                <div class="mySlidesProduct">
+                                    <img src="/Assets/product 1 - 5.jpg">
+                                </div>
+                              
+                                <div class="mySlidesProduct">
+                                    <img src="/Assets/product 1 - 6.jpg">
+                                </div>
+                              
+                                <a class="prevp" onclick="plusSlidesP(-1)">&#10094;</a>
+                                <a class="nextp" onclick="plusSlidesP(1)">&#10095;</a>
+                              
+                                <div class="row">
+                                  <div class="column">
+                                    <img class="demo cursor" src="/Assets/product 1 - 1.png" onclick="currentSlideP(1)">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo cursor" src="/Assets/product 1 - 2.jpg" onclick="currentSlideP(2)">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo cursor" src="/Assets/product 1 - 3.jpg" onclick="currentSlideP(3)">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo cursor" src="/Assets/product 1 - 4.jpg" onclick="currentSlideP(4)">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo cursor" src="/Assets/product 1 - 5.jpg" onclick="currentSlideP(5)">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo cursor" src="/Assets/product 1 - 6.jpg" onclick="currentSlideP(6)">
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="productsSpec">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th>Rated Capacity</th>
+                                    <th>Max Capacity</th>
+                                    <th>Remarks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SLD 2200-L</td>
+                                    <td>2.2*3.85m</td>
+                                    <td>1500 kg</td>
+                                    <td>2000 kg</td>
+                                    <td>3 sets/20GP</td>
+                                </tr>
+                                <tr>
+                                    <td>SLD 2200-H</td>
+                                    <td>2.2*5.85m</td>
+                                    <td>2500 kg</td>
+                                    <td>5000 kg</td>
+                                    <td>3 sets/20GP</td>
+                                </tr>
+                                <tr>
+                                    <td>SLD 3200-H</td>
+                                    <td>3.2*5.85m</td>
+                                    <td>2500 kg</td>
+                                    <td>5000 kg</td>
+                                    <td>2 sets/20GP</td>
+                                </tr>
+                                <tr>
+                                    <td>SLD 4200-H</td>
+                                    <td>4.2*5.85m</td>
+                                    <td>2500 kg</td>
+                                    <td>5000 kg</td>
+                                    <td>2 sets</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="productsFrame" onclick="openModalp2()">
+                <div class="products">
+                    <img src="/Assets/product 2.png" alt="">
+                    <div class="productstext">
+                        <p class="productsName">Hoist</p>
+                        <p class="productsDesc">Hoist atau Motor Gondola adalah mesin untuk mengangkat platform atau keranjang, dimana jumlahnya bisa terdapat satu, dua, ataupun lebih</p>
+                        <p class="moreInfo" onclick="openModalp2()">MORE INFO &rarr;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsModal2">
+                <div class="productsModalContent2">
+                    <div class="upper">
+                        <div class="productsModalText">
+                            <p class="productsModalTitle">Hoist</p>
+                            <p class="productsModalDesc">Hoist atau Motor Gondola adalah mesin untuk mengangkat platform atau keranjang, dimana jumlahnya bisa terdapat satu, dua, ataupun lebih ergantung dari kebutuhan dan pemakaian, namun pada umumnya adalah 2 buah. letaknya ada di keranjang gondola. <br> <br>
+                                Spesification <br>
+                                &#x2022; Aluminum Alloy housing <br>
+                                &#x2022; Neman worm-helical gear reducer <br>
+                                &#x2022; S wire rope path <br>
+                                &#x2022; Centrifugal over-speed governor</p>
+                        </div>
+                            <div class="productsImageContainer2">
+                                <span class="closebtnp2" onclick="closeModalp2()">&times;</span>
+                                <div class="mySlidesProduct2">
+                                    <img src="/Assets/product 2 - 1.png">
+                                </div>
+                              
+                                <div class="mySlidesProduct2">
+                                    <img src="/Assets/product 2 - 2.jpg">
+                                </div>
+                              
+                                <div class="mySlidesProduct2">
+                                    <img src="/Assets/product 2 - 3.jpg">
+                                </div>
+                              
+                                <div class="mySlidesProduct2">
+                                    <img src="/Assets/product 2 - 4.jpg">
+                                </div>
+                              
+                                <a class="prevp2" onclick="plusSlides2(-1)">&#10094;</a>
+                                <a class="nextp2" onclick="plusSlides2(1)">&#10095;</a>
+                              
+                                <div class="row2">
+                                  <div class="column">
+                                    <img class="demo2 cursor" src="/Assets/product 2 - 1.png" onclick="currentSlide2(1)" alt="The Woods">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo2 cursor" src="/Assets/product 2 - 2.jpg" onclick="currentSlide2(2)" alt="Cinque Terre">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo2 cursor" src="/Assets/product 2 - 3.jpg" onclick="currentSlide2(3)" alt="Mountains and fjords">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo2 cursor" src="/Assets/product 2 - 4.jpg" onclick="currentSlide2(4)" alt="Northern Lights">
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="productsSpec">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Self Weight</th>
+                                    <th>Lifting Capacity</th>
+                                    <th>Speed</th>
+                                    <th>Motor Power</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hoist LTD5</td>
+                                    <td>51 kg</td>
+                                    <td>500 kg</td>
+                                    <td>9.6 m/min</td>
+                                    <td>1.1 kw</td>
+                                </tr>
+                                <tr>
+                                    <td>Hoist LTD6.3</td>
+                                    <td>53 kg</td>
+                                    <td>630 kg</td>
+                                    <td>9.6 m/min</td>
+                                    <td>1.5 kw</td>
+                                </tr>
+                                <tr>
+                                    <td>Hoist LTD8</td>
+                                    <td>87 kg</td>
+                                    <td>800 kg</td>
+                                    <td>8.3 m/min</td>
+                                    <td>2.2 kw</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="productsFrame">
+                <div class="products">
+                    <img src="/Assets/product 3.png" alt="">
+                    <div class="productstext">
+                        <p class="productsName">Suspend Platform</p>
+                        <p class="productsDesc">Seri ZLP adalah alat angkut sementara yang sangat ideal untuk pekerjaan fasad bangunan, dekorasi, pembersihan dan pemeliharaan gedung</p>
+                        <p class="moreInfo">MORE INFO &rarr;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsFrame">
+                <div class="products">
+                    <img src="/Assets/product 4.png" alt="">
+                    <div class="productstext">
+                        <p class="productsName">BMU</p>
+                        <p class="productsDesc">Mesin pembersih jendela jenis horizontal kami adalah salah satu peralatan yang paling umum digunakan untuk bekerja di tempat terbuka</p>
+                        <p class="moreInfo">MORE INFO &rarr;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsFrame">
+                <div class="products">
+                    <img src="/Assets/product 5.png" alt="">
+                    <div class="productstext">
+                        <p class="productsName">Electrical Control System</p>
+                        <p class="productsDesc">Panel Gondola terletak di keranjang gondola dimana terdapat tombol tombol untuk pengoperasian gondola seperti tombol start, tombol naik, tombol turun, emergency stop, switch motor/hoist</p>
+                        <p class="moreInfo">MORE INFO &rarr;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsFrame">
+                <div class="products">
+                    <img src="/Assets/product 6.png" alt="">
+                    <div class="productstext">
+                        <p class="productsName">Roda Bumper</p>
+                        <p class="productsDesc">Aksesoris untuk keranjang gondola &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p><br>
+                        <p class="moreInfo">MORE INFO &rarr;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsFrame">
+                <div class="products">
+                    <img src="/Assets/product 7.png" alt="">
+                    <div class="productstext">
+                        <p class="productsName">Safety Lock LSB 30</p>
+                        <p class="productsDesc">Safety Lock atau Blockstop Gondola adalah alat pengaman gondola yang berfungsi apabila terjadi penurunan level keranjang atau wirerope utama putus</p>
+                        <p class="moreInfo">MORE INFO &rarr;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsFrame">
+                <div class="products">
+                    <img src="/Assets/product 8.png" alt="">
+                    <div class="productstext">
+                        <p class="productsName">Vertical Fall Arrester/Auto Stop</p>
+                        <p class="productsDesc">Alat pengait carmantle, berupa besi baja putih yang kuat, berguna untuk alat pelindung diri dari jatuh bebas</p>
+                        <p class="moreInfo">MORE INFO &rarr;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsFrame">
+                <div class="products">
+                    <img src="/Assets/product 9.png" alt="">
+                    <div class="productstext">
+                        <p class="productsName">Wire Rope</p>
+                        <p class="productsDesc">Wirerope gondola adalah tali penggantung gondola. Terdapat empat wirerope gondola, yaitu dua wirerope utama dan dua wirerope safety</p>
+                        <p class="moreInfo">MORE INFO &rarr;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsFrame">
+                <div class="products">
+                    <img src="/Assets/product 10.png" alt="">
+                    <div class="productstext">
+                        <p class="productsName">Wire Winder</p>
+                        <p class="productsDesc">Wirewinder adalah penggulung wirerope agar wirerope tidak bergelantungan di dinding gedung</p>
+                        <p class="moreInfo">MORE INFO &rarr;</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <!-- ===============================PRODUCTS END=================================== -->
+
+    <!-- ===============================PORTO START=================================== -->
+    <div class="portofolio">
+        <h1>PORTOFOLIO</h1>
+        <p>Kami telah melayani berbagai perusahaan di dalam dan luar kota. Kami berterima kasih kepada Anda yang telah menjadikan kami sebagai mitra yang dapat membantu Anda dalam mewujudkan keinginan Anda</p>
+        <div class="portImg">
+            <div><img src="./Assets/port 1.png" alt=""></div>
+            <div><img src="./Assets/port 2.png" alt=""></div>
+            <div><img src="./Assets/port 3.png" alt=""></div>
+            <div><img src="./Assets/port 4.png" alt=""></div>
+            <div><img src="./Assets/port 5.png" alt=""></div>
+            <div><img src="./Assets/port 6.png" alt=""></div>
+            <div><img src="./Assets/port 7.png" alt=""></div>
+            <div><img src="./Assets/port 8.png" alt=""></div>
+            <div><img src="./Assets/port 9.png" alt=""></div>
+            <div><img src="./Assets/port 10.png" alt=""></div>
+            <div><img src="./Assets/port 11.png" alt=""></div>
+        </div>
+    </div>
+    <!-- ===============================PORTO END=================================== -->
+
+    <!-- ===============================GALLERY START=================================== -->
+    <div class="galleryContainer" id="gallery">
+        <h1 class="galleryTitle">OUR GALLERY</h1>
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/IMG_03441.jpg">
+        </div>
+      
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/SLIDE2.jpg">
+        </div>
+      
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/PICT0060.jpg">
+        </div>
+      
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/gondola-keren.jpg">
+        </div>
+      
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/IMG-20181226-WA0059.jpg">
+        </div>
+      
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/IMG-20180824-WA0014.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/SLIDE1.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/PICT0089.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/PICT0066.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/PICT0082.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/IMG-20190312-WA0020.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/IMG-20190123-WA0020.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/IMG-20181112-WA0008.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/IMG-20190219-WA0003.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/IMG-20181108-WA0012.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/20190315_114507.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/IMG-20160601-WA013.jpg">
+        </div>
+
+        <div class="mySlidesGallery">
+            <img src="https://primagondola.co.id/uploads/images/thumb/IMG-20180705-WA0001.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&nbsp;&#10094;&nbsp;&nbsp;</a>
+        <a class="next" onclick="plusSlides(1)">&nbsp;&#10095;&nbsp;&nbsp;</a>
+    </div>  
+        <div class="rowg">
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/IMG_03441.jpg" onclick="currentSlide(1)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/SLIDE2.jpg" onclick="currentSlide(2)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/PICT0060.jpg" onclick="currentSlide(3)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/gondola-keren.jpg" onclick="currentSlide(4)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/IMG-20181226-WA0059.jpg" onclick="currentSlide(5)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/IMG-20180824-WA0014.jpg" onclick="currentSlide(6)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/SLIDE1.jpg" onclick="currentSlide(7)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/PICT0089.jpg" onclick="currentSlide(8)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/PICT0066.jpg" onclick="currentSlide(9)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/PICT0082.jpg" onclick="currentSlide(10)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/IMG-20190312-WA0020.jpg" onclick="currentSlide(11)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/IMG-20190123-WA0020.jpg" onclick="currentSlide(12)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/IMG-20181112-WA0008.jpg" onclick="currentSlide(13)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/IMG-20190219-WA0003.jpg" onclick="currentSlide(14)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/IMG-20181108-WA0012.jpg" onclick="currentSlide(15)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/20190315_114507.jpg" onclick="currentSlide(16)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/IMG-20160601-WA013.jpg" onclick="currentSlide(17)">
+          </div>
+          <div class="columng">
+            <img class="demog cursor" src="https://primagondola.co.id/uploads/images/thumb/IMG-20180705-WA0001.jpg" onclick="currentSlide(18)">
+          </div>
+        </div>
+    <!-- ===============================GALLERY END=================================== -->
+    
+    <!-- ===============================TESTIMONI START=================================== -->
+    <div class="testimoni">
+        <h1>TESTIMONIALS</h1>
+        <div class="testi1">
+            <div class="testiLayer1">
+                <br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="testiLayer2">
+                “Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia. Sed earum quas eos quae voluptas ad impedit consectetur”<br><br> -- Narasumber 1
+            </div>
+            <div class="quote">
+                "
+            </div>
+        </div>
+        <div class="testi2">
+            <div class="testiLayer1">
+                <br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="testiLayer2">
+                “Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia. Sed earum quas eos quae voluptas ad impedit consectetur”<br><br> -- Narasumber 2
+            </div>
+            <div class="quote">
+                "
+            </div>
+        </div>
+        <div class="testi3">
+            <div class="testiLayer1">
+                <br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="testiLayer2">
+                “Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia. Sed earum quas eos quae voluptas ad impedit consectetur”<br><br> -- Narasumber 3
+            </div>
+            <div class="quote">
+                "
+            </div>
+        </div>
+    </div>
+    <!-- ===============================TESTIMONI END=================================== -->
+
+    <!-- ===============================CONTACT US START=================================== -->
+    <div class="contactUs" id="contactUs">
+        <div class="CUcontent">
+            <h1>CONTACT US</h1>
+            <p>Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia. Sed earum quas eos quae voluptas ad impedit consectetur Lorem ipsum dolor sit amet. Ut deleniti nobis qui porro cumque eum dolorem mollitia. Sed earum quas eos quae voluptas ad impedit consectetur</p>
+            <div class="buttons">
+                <button class="wa" onclick="openWa()">
+                    <img src="./Assets/iconwa.png" alt="">
+                    Whatsapp
+                </button>
+                <button class="email" onclick="openEmail()">
+                    <img src="./Assets/iconemail.png" alt="">
+                    Email
+                </button>
+            </div>
+        </div>
+        <div class="imgCUcont">
+            <div class="imgg1">
+                <div class="imgBg"><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+                <img src="https://primagondola.co.id/uploads/images/thumb/IMG-20181226-WA0059.jpg" alt="" class="imgCU1">
+            </div>
+            <div class="imgg2">
+                <div class="imgBg2"><br><br><br><br><br><br><br><br><br></div>
+                <img src="https://primagondola.co.id/uploads/images/thumb/20190315_114507.jpg" alt="" class="imgCU2">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="https://primagondola.co.id/assets/images/front-logo.png" alt="" onclick="scrollHome()">
+        <div class="tengah">
+            <p>Ingin mengetahui info lebih lanjut?</p>
+            <button onclick="openWa()">Hubungi Kami</button>
+        </div>
+        <div class="kanan">
+            <div class="f1" onclick="openLoc()">
+                <img src="./Assets/iconloc.png" alt="">
+                <p>Jl. Lautze No. 11 - Jakarta Pusat 10740 - Indonesia</p>
+            </div>
+            <div class="f2">
+                <img src="./Assets/iconphone.png" alt="">
+                <p>085100300200</p>
+            </div>
+            <div class="f3">
+                <img src="./Assets/iconfax.png" alt="">
+                <p>021-5663333</p>
+            </div>
+            <div class="f4" onclick="openEmail()">
+                <img src="./Assets/iconemail.png" alt="">
+                <p>primagondola@yahoo.com</p>
+            </div>
+            <div class="f5" onclick="openWa()">
+                <img src="./Assets/iconwa.png" alt="">
+                <p>085103300100</p>
+            </div>
+        </div>
+    </div>
+    <!-- ===============================CONTACT US END=================================== -->
+</body>
+<script src="MainPage.js"></script>
+</html>
